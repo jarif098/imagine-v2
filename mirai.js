@@ -37,7 +37,7 @@ module.exports.run = async function ({ api, event, args }) {
     const API = `https://midjourney.emma999999.repl.co/imagine?prompt=${encodeURIComponent(
         prompt
 )}&model=${model}&
-ratio=${ratio}&apikey=anniejarif`;
+ratio=${ratio}`;
 
     const timeout = 20000;
     const imageStreamPromise = axios.get(API, { responseType: 'arraybuffer' });
